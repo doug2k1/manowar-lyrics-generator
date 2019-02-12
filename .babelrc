@@ -1,11 +1,3 @@
 {
-  "presets": [ "es2015" ],
-  "plugins": [
-    ["transform-imports", {
-      "lodash": {
-        "transform": "lodash/${member}",
-        "preventFullImport": true
-      }
-    }]
-  ]
+  "presets": [ "@babel/env" ]
 }
