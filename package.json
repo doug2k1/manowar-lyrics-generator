@@ -1,22 +1,26 @@
 {
-  "name": "manowar-lyrics-generator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "name": "manowar-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "webpack"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.17.5",
-    "@babel/preset-env": "^7.16.11",
-    "babel-loader": "^8.2.3",
-    "webpack": "^5.70.0",
-    "webpack-cli": "^4.9.2"
+    "@types/lodash-es": "^4.17.12",
+    "@types/seedrandom": "^3.0.8",
+    "prettier": "^3.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   },
   "dependencies": {
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "seedrandom": "^3.0.5"
   }
 }

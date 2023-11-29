@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manowar Lyrics Generator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="icon.png" sizes="256x256" type="image/png" />
     <meta property="og:title" content="Manowar Lyrics Generator" />
     <meta
       property="og:image"
-      content="https://www.powermetalsong.com/warrior.jpg"
+      content="https://manowar-lyrics-generator.dmatoso.com/warrior.jpg"
     />
     <meta
       property="og:description"
-      content="Generate your own Power Metal song lyrics with warriors, kings, blood and fire."
+      content="Generate your own Manowar song lyrics with warriors, kings, blood and fire."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link
@@ -20,125 +20,23 @@
       rel="stylesheet"
       type="text/css"
     />
-    <style>
-      html,
-      body {
-        background-color: #000;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        color: #eee;
-        font-family: 'Noto Serif', serif;
-      }
-      .container {
-        background: #000 url('warrior.jpg') no-repeat center top;
-        overflow: hidden;
-      }
-      .wrapper {
-        padding-left: 50%;
-        margin: 0 auto;
-        max-width: 1600px;
-      }
-      .box {
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 20px;
-      }
-      h1 {
-        color: #ff8640;
-        font-weight: 700;
-        margin: 0 0 1em;
-        text-align: center;
-        font-size: 52px;
-        text-shadow: 1px 1px 5px #000;
-      }
-      h2 {
-        color: #c72331;
-        font-weight: 700;
-        font-size: 22px;
-        text-transform: uppercase;
-        margin: 0 0 1em;
-      }
-      .lyrics {
-        font-size: 16px;
-        margin-bottom: 2em;
-      }
-      p {
-        margin: 0 0 1em;
-      }
-      .btn {
-        display: inline-block;
-        background-color: #c72331;
-        color: #fff;
-        font-size: 16px;
-        line-height: 36px;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 5px 10px 5px 5px;
-      }
-      .btn:hover {
-        background-color: #ff2d30;
-      }
-      .btn .icon {
-        background: url('hammer.svg') no-repeat 4px 3px;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        vertical-align: top;
-        margin-right: 10px;
-      }
-      .footer-wrapper {
-        margin-top: 50px;
-      }
-      .footer {
-        background-color: rgba(0, 0, 0, 0.8);
-        color: #999;
-        padding: 20px;
-        margin: 0 auto;
-        max-width: 1600px;
-        text-align: center;
-      }
-      .footer a,
-      .sing a {
-        color: #ff8640;
-      }
-      .sing {
-        margin-bottom: 2em;
-      }
-      @media screen and (max-device-width: 960px) {
-        .wrapper {
-          padding-left: 0;
-        }
-      }
-    </style>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-22870179-7"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'UA-22870179-7')
-    </script>
   </head>
   <body>
     <div class="container">
-      <h1>Manowar Lyrics Generator</h1>
+      <div class="site-title">Manowar Lyrics Generator</div>
       <div class="wrapper">
         <div class="box">
-          <h2 id="songTitle"></h2>
+          <h1 id="songTitle"></h1>
           <p class="lyrics" id="songLyrics"></p>
-          <a href="" class="btn"
-            ><span class="icon"></span><span>Generate a new song</span></a
-          >
+
+          <div class="btn-row">
+            <a href="/" class="btn"
+              ><span class="icon"></span><span>Generate a new song</span></a
+            >
+            <button id="shareBtn" class="btn">
+              <span class="icon icon-share"></span><span>Share this song</span>
+            </button>
+          </div>
         </div>
       </div>
       <div class="footer-wrapper">
@@ -158,6 +56,6 @@
       </div>
     </div>
 
-    <script src="dist/bundle.js"></script>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

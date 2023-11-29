@@ -9,8 +9,6 @@ http://dmatoso.com/manowar-lyrics-generator/
 Run:
 
 ```console
-$ npm i
-$ npm build
+$ yarn
+$ yarn dev
 ```
-
-Open index.html
