@@ -43,14 +43,20 @@ h1 {
 p {
   margin: 0 0 1em;
 }
+.btn-row {
+  display: flex;
+  gap: 20px;
+}
 .btn {
   display: inline-block;
   border: none;
   cursor: pointer;
   background-color: #c72331;
   color: #fff;
+  font-family: 'Noto Serif', serif;
   font-size: 16px;
   line-height: 36px;
+  text-align: left;
   text-transform: uppercase;
   text-decoration: none;
   padding: 5px 10px 5px 5px;
@@ -68,6 +74,10 @@ p {
   vertical-align: top;
   margin-right: 10px;
 }
+.btn .icon-share {
+  background: url('./images/share.svg') no-repeat center center;
+  background-size: 20px 20px;
+}
 .footer-wrapper {
   margin-top: 50px;
 }
@@ -79,15 +89,14 @@ p {
   max-width: 1600px;
   text-align: center;
 }
-.footer a,
-.sing a {
+.footer a {
   color: #ff8640;
-}
-.sing {
-  margin-bottom: 2em;
 }
 @media screen and (max-device-width: 960px) {
   .wrapper {
     padding-left: 0;
+  }
+  .btn-row {
+    flex-direction: column;
   }
 }
