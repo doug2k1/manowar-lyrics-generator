@@ -1,0 +1,93 @@
+html,
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #eee;
+  font-family: 'Noto Serif', serif;
+}
+.container {
+  background: #000 url('./images/warrior.jpg') no-repeat center top;
+  overflow: hidden;
+}
+.wrapper {
+  padding-left: 50%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.box {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+.site-title {
+  color: #ff8640;
+  font-weight: 700;
+  margin: 0 0 1em;
+  text-align: center;
+  font-size: 52px;
+  text-shadow: 1px 1px 5px #000;
+}
+h1 {
+  color: #c72331;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0 0 1em;
+}
+.lyrics {
+  font-size: 16px;
+  margin-bottom: 2em;
+}
+p {
+  margin: 0 0 1em;
+}
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background-color: #c72331;
+  color: #fff;
+  font-size: 16px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 10px 5px 5px;
+}
+.btn:hover {
+  background-color: #ff2d30;
+}
+.btn .icon {
+  background: url('./images/hammer.svg') no-repeat 4px 3px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.footer-wrapper {
+  margin-top: 50px;
+}
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #999;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1600px;
+  text-align: center;
+}
+.footer a,
+.sing a {
+  color: #ff8640;
+}
+.sing {
+  margin-bottom: 2em;
+}
+@media screen and (max-device-width: 960px) {
+  .wrapper {
+    padding-left: 0;
+  }
+}
